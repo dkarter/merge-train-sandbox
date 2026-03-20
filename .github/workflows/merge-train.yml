@@ -18,7 +18,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Run merge train action
-        uses: dkarter/merge-train-action-60-status-dedupe@main
+        uses: dkarter/merge-train-action@rms-60-status-dedupe
         with:
           token: ${{ secrets.MERGE_TRAIN_TOKEN }}
           label-name: ready-to-merge
