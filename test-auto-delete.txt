@@ -1,0 +1,1 @@
+Test file for RMS-61 auto-delete source branch feature

@@ -18,10 +18,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Run merge train action
-        uses: dkarter/merge-train-action@rms-60-status-dedupe
+        uses: dkarter/merge-train-action@main
         with:
           token: ${{ secrets.MERGE_TRAIN_TOKEN }}
           label-name: ready-to-merge
           wait-timeout-seconds: '300'
           poll-interval-seconds: '10'
           rerun-failed-checks: 'true'
+          auto-delete-source-branch: 'true'
