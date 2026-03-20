@@ -1,0 +1,6 @@
+[tools]
+lefthook = "latest"
+gitleaks = "latest"
+
+[hooks]
+postinstall = "lefthook install"
